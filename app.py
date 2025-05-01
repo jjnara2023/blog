@@ -30,4 +30,5 @@ def home():
     return "<h2>중복 키워드 확인 API</h2><p>POST /check_keywords with JSON {'keywords': '키워드1, 키워드2'}</p>"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
+
